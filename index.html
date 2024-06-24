@@ -1,22 +1,28 @@
 <!DOCTYPE html>
 
 <head>
+
+    <title>Find the objects!</title>
+
     <script src="https://aframe.io/releases/1.6.0/aframe.min.js"></script>
     <script src="https://unpkg.com/aframe-environment-component@1.3.3/dist/aframe-environment-component.min.js"></script>
+    <script src="script.js"></script>
+
 </head>
 
 <body>
 
     <a-scene>
-        <a-entity environment="preset: forest"></a-entity>
-        <a-torus color="blue" position="6 2 -15"></a-torus>
-        <a-dodecahedron color="red" position="5 2 4"></a-dodecahedron>
-        <a-cone color="green" position="9 2 3"></a-cone>
-        <a-cylinder color="white" position="14 2 -6"></a-cylinder>
-        <a-sphere color="brown" position="12 2 -7"></a-sphere>
 
-        <a-cylinder color="pink" position="0 1 5"></a-cylinder>
-        <a-cone color="pink" position="0 2 5"></a-cone>
+        <a-entity environment="preset: forest"></a-entity>
+        <a-torus id="torus" color="blue"></a-torus>
+        <a-dodecahedron id="dodecahedron" color="red"></a-dodecahedron>
+        <a-cone id="cone" color="green"></a-cone>
+        <a-cylinder id="cylinder" color="white"></a-cylinder>
+        <a-sphere id="sphere" color="brown"></a-sphere>
+
     </a-scene>
     
 </body>
+
+</html>
